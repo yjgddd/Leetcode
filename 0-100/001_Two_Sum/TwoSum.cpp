@@ -1,5 +1,5 @@
 
-//使用hash表，时间复杂度O(n),运行时间4ms
+//使用hash表，时间复杂度O(n)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
