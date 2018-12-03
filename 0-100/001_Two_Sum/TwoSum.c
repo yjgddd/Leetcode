@@ -1,4 +1,4 @@
-//直接双重循环的C语言解法,时间复杂度O（）
+//直接双重循环的C语言解法,时间复杂度O(n^2)
 int twoSum(int* nums, int numsSize, int target) 
 { 
     int i,j; 
