@@ -1,4 +1,6 @@
-/*给两个字符串问它们是不是相似的字符串，比如“egg”和"add"就是相似的字符串，这题的解法是利用哈希表*/
+/*给两个字符串问它们是不是相似的字符串，比如“egg”和"add"就是相似的字符串，这题的解法是利用哈希表,C++中可以使用map，自动建立Key-value的对应，且key和
+value可以是任意类型，比如这题的key和value的类型都是char，那么可以遍历字符串s,每个字符作为key，value是t中对应位置的字符，若在遍历过程中出现冲突,即
+hash[s[i]]!=t[i]就返回false。同样再遍历t，重复操作*/
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
