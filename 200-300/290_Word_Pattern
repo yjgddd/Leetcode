@@ -1,5 +1,6 @@
 /*给一个模式串和一个字符串，问该字符串和模式串是不是相同的模式，比如pattern = "abba", str = "dog cat cat dog"，结果是对的，如果换成了
-str = "dog cat cat fish"就是错误。这个题目用hash表，C++中可以用map，非常方便，我的解法是定义了两个hash表,这题和P204类似。结果是0ms,打败100%*/
+str = "dog cat cat fish"就是错误。这个题目用hash表，C++中可以用map，非常方便，我的解法是定义了两个hash表,这题和P204类似。结果是0ms,打败100%,
+需要注意的是str的空格处理，要把子字符串一个个的分隔出来，与模式串对应。*/
 class Solution {
 public:
     bool wordPattern(string pattern, string str) {
