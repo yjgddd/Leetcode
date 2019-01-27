@@ -1,0 +1,32 @@
+/**/
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        map <char,int> s,t;
+        string ans;
+        int a=0,b=0,i;
+        for(i=0;i<secret.length();i++)
+        {
+          if(secret[i]==guess[i]) 
+             a++;
+          else
+          {
+             s[secret[i]]+=1;
+             t[guess[i]]+=1; 
+          } 
+          //cout<<s[secret[i]]<<t[guess[i]]<<endl;
+        }
+        map<char,int>::iterator it=s.begin();
+        while(it!=s.end())
+        {
+            b+=min(it->second,t[it->first]);
+            ++it;
+        }
+        string a1=to_string(a),b1=to_string(b);
+        ans.insert(ans.size(),a1);
+        ans.insert(ans.end(),'A');
+        ans.insert(ans.size(),b1);
+        ans.insert(ans.end(),'B');
+        return ans;
+    }
+};
