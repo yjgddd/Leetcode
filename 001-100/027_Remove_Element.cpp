@@ -1,4 +1,4 @@
-//删除数组中的指定元素，和026类似
+//删除数组中的指定元素，和P026类似
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
