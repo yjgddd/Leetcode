@@ -1,3 +1,4 @@
+/*找插入的位置，使得原数字依然保持有序。比较简单，遍历一遍就可以*/
 class Solution {
 public:
      int searchInsert(vector<int>& nums, int target) {
