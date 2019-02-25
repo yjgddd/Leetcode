@@ -12,7 +12,7 @@ P     I    N
 A   L S  I G
 Y A   H R
 P     I
-看了discuss中的思路AC如下
+看了discuss中的思路AC如下。对行数进行操作，一开始行数++,到最后一行后行数--，不断循环。
 */
 class Solution {
 public:
