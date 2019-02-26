@@ -1,7 +1,8 @@
-/*将一个字符串中的数字提取出来。这题坑无数，一个个踩过来，wa加running time error加起来20多次我才通过，菜到哭泣，题目本身不难，要注意：
+/*将一个字符串中的数字提取出来，题目本身不难，但是题坑无数，一个个踩过来，wa加running time error加起来20多次我才通过，菜到哭泣，题目本身不难，要注意：
 1、字符除了空格外第一个字符必须是数字或者正负号
 2、数字或者正负号开始后一旦遇到非数字就终止
-3、超出int的范围返回INT_MAX(2^31-1)或者INT_MIN((−2^31)
+3、超出int的范围返回INT_MAX(2^31-1)或者INT_MIN((−2^31)，要判断好正负号
+4、字符串可能前面带0，转为数字要处理前面的0
 不满足上述条件的都返回0
 题目中的测试用例
 Input: "42"  Output: 42
@@ -9,13 +10,15 @@ Input: "   -42"  Output: -42
 Input: "4193 with words"  Output: 4193
 Input: "words and 987"   Output: 0
 Input: "-91283472332" Output: -2147483648
-自己遇到的坑：
+自己遇到的各种坑：
 Input:"-   234"  Output:
 Input:"2147483648"  Output:2147483647
 Input:"2147483646"  Output:2147483646
 Input:"+-42"  Output:0
-Input:"  3.14"  Output:3
-
+Input:""3.14159"  Output:3
+Input:"-2147483647" Output:-2147483647
+Input:"  -0012a42" Output:-12
+Input:"+1" Output:1
 */
 class Solution {
 public:
