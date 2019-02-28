@@ -1,5 +1,5 @@
 /*典型的字符串匹配问题，求开始匹配时候的下标*/
-//一开始写了一个很残的朴素匹配，仅仅超过18%
+//一开始写了一个很残的朴素匹配，复杂度有点高，仅仅超过18%
 class Solution {
 public:
     int strStr(string haystack, string needle) {
@@ -27,4 +27,18 @@ public:
         else return -1;
     }
 };
-//然后发现C++里面有字符串截取函数，用一下代码更简单
+//然后发现C++里面有字符串截取函数，用一下代码更简单。字符串截取substr()函数参数是下标开始位置和长度。然后就超过99.35%。其实这道题我本来觉得要用KMP的
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int i=0,j=0,len1=haystack.size(),len2=needle.size();
+        if(len2>len1) return -1;
+        if(haystack==needle||len2==0) return 0;
+        for(i=0;i<len1-len2+1;i++)
+        {
+            if(needle==haystack.substr(i,len2)) return i;
+        }
+        return -1;
+    }
+};
+
