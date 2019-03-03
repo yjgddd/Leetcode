@@ -7,7 +7,7 @@
 -1：我的号码较低
  1：我的号码更高
  0：恭喜！你说对了！
- 这个题目是一个简单的二分法。AC的时间4ms,超过100%
+ 这个题目是一个简单的二分法。AC的时间4ms,超过100%。和P278思路一样
  */
 // Forward declaration of guess API.
 // @param num, your guess
