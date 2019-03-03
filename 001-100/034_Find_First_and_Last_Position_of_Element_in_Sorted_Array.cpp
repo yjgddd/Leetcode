@@ -1,4 +1,5 @@
-/*在有序数组中找出target的起始位置和结束为止，如果不存存在返回[-1,-1],要求时间复杂度O（logn）,因此用二分法*/
+/*在有序数组中找出target的起始位置和结束为止，如果不存存在返回[-1,-1],要求时间复杂度O（logn）,因此用二分法，找到和target相等的元素，再左右看是否还有
+和target相等的元素*/
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
