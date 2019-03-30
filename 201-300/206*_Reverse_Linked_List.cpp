@@ -1,4 +1,4 @@
-/*单链表的逆值，待总结思路*/
+/*单链表的逆置，待总结思路*/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
