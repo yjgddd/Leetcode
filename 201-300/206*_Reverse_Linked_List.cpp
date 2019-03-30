@@ -1,4 +1,4 @@
-/*单链表的逆置，待总结思路*/
+/*单链表的逆置，可以用两种方法，递归和迭代，此处用的是迭代，待总结思路*/
 /**
  * Definition for singly-linked list.
  * struct ListNode {
