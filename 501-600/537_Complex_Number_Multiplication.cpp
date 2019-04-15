@@ -3,7 +3,9 @@ Example 1:
 Input: "1+1i", "1+1i"
 Output: "0+2i"
 Explanation: (1 + i) * (1 + i) = 1 + i2 + 2 * i = 2i, and you need convert it to the form of 0+2i.
-做法是将实部和虚部提取出来，比如第一个复数的实部a1,虚部a2,第二个复数的实部b1,虚部b2,那么乘积就是(a1*b1-a2*b2)+(a1*b2+b1*a2)i*/
+做法是将实部和虚部提取出来，比如第一个复数的实部a1,虚部a2,第二个复数的实部b1,虚部b2,那么乘积就是(a1*b1-a2*b2)+(a1*b2+b1*a2)i
+Tips:stoi()可以将字符串转换为数字，to_string()可以将数字转为字符串，subtr()可以提取字符串的子串，第一个参数是开始位置，第二个参数是字符个数
+*/
 class Solution {
 public:
     string complexNumberMultiply(string a, string b) {
