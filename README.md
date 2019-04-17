@@ -1,3 +1,3 @@
 # leetcode
-## Todo：948
-## Solved：75 / 1023
+## Todo：947
+## Solved：76 / 1023
