@@ -12,7 +12,7 @@
 class Solution {
 public:
     double myPow(double x, int n) {
-        if(n==0) return 1;//判断底数为1
+        if(n==0) return 1;//指数为0返回1
         if(n==1) return x;//指数为1返回base
         if(n==-1) return 1/x;//判断指数为负
         double result=myPow(x,n>>1);//递归
