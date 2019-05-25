@@ -1,5 +1,5 @@
 
-//使用hash表，时间复杂度O(n)
+//求一个数组中两个数加起来为target的坐标位置，只有一组。使用hash表，时间复杂度O(n)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
